@@ -17,7 +17,7 @@ SDaaH ist damit mehr als nur ein Begriff. Es ist eine kleine persönliche Philos
 
 ## Logo
 
-![SDaaH-Logo](./SDaah-logo.png)
+<img src="./SDaaH-logo.png" alt="SDaaH-Logo" width="300">
 
 Das Logo ist bewusst schlicht gehalten – ein Symbol für die Freude am Coden,  
 ohne große Firmenstrukturen, ohne Marketing, ohne Verpflichtungen.  
