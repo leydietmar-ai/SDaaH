@@ -1,1 +1,119 @@
+# MyFramework_v3.1
 
+MyFramework_v3.1 ist ein leichtgewichtiges PHP‑MVC‑Framework mit klarer Struktur und sauberer Trennung von Aufgabenbereichen. Es basiert auf einer klassischen MVC‑Architektur und bringt alle grundlegenden Bausteine für moderne Webanwendungen bereits mit.
+
+---
+
+## Projektstruktur (vereinfacht)
+
+```text
+├── app/
+│   ├── Config/          # Konfigurations-Klassen (DB, Mail, API-Keys)
+│   ├── Controllers/     # Deine Logik (BaseController.php + spezifische)
+│   ├── Core/            # Das Herzstück (Router, Database, Model)
+│   ├── Helpers/         # Statische Tools (Session, Redirect, Form)
+│   ├── Models/          # Datenbank-Klassen (BaseModel.php + spezifische)
+│   ├── Routes/          # Routen
+│   ├── Services/        # Komplexe Logik (AuthService inkl. OTP, Mailer)
+│   ├── Traits/          # Die "Misch-Komponenten" (CrudTrait, ResponseTrait)
+│   └── Views/           # Deine Templates (auth/, layouts/, modal/)
+├── public/              # Einziger öffentlich erreichbarer Ordner
+│   ├── .htaccess        # Leitet alles auf index.php um
+│   ├── index.php        # Der "Front-Controller" (Einstiegspunkt)
+│   └── assets/          # CSS, JS, Bilder
+├── storage/             # Logfiles, Uploads, Cache
+├── vendor/              # Externe Libraries (Composer)
+├── .env                 # Sensible Daten (Nicht in Git!)
+└── composer.json        # Autoloading-Konfiguration
+```
+
+---
+
+## Wie eine Anfrage verarbeitet wird
+
+### Front‑Controller
+Alle Anfragen landen in `public/index.php`, wo Umgebung, Autoloading und Kernkomponenten geladen werden.
+
+### Routing
+Der Router wertet die URL aus und entscheidet, welcher Controller und welche Methode ausgeführt wird.
+
+### Controller
+Der Controller koordiniert den Ablauf: Er holt Daten aus Models, nutzt Services und übergibt alles an die View.
+
+### View
+Das Template erzeugt die Ausgabe als HTML oder JSON.
+
+Dieser feste Ablauf sorgt für klare Zuständigkeiten und gut wartbaren Code.
+
+---
+
+## Helpers & Services
+
+### Helpers – kleine Werkzeuge
+
+Statische Hilfsklassen für typische Aufgaben wie:
+
+- Session‑Verwaltung  
+- Weiterleitungen  
+- Formular‑Hilfen  
+
+Sie halten Controller‑Code schlank und vermeiden direkte Arbeit mit Superglobals.
+
+### Services – komplexe Logik
+
+Services bündeln Geschäftslogik, z. B.:
+
+- Authentifizierung  
+- E‑Mail‑Versand  
+- Workflows und Validierungen  
+
+Sie arbeiten eng mit Models zusammen und steuern komplette Abläufe.
+
+---
+
+## Sicheres Passwort‑Reset & Token‑Handling
+
+Das Framework nutzt ein robustes Sicherheitskonzept für Passwort‑Resets:
+
+- Tokens sind **zeitlich begrenzt**  
+- Jeder Token ist **nur einmal gültig**  
+- Benutzer‑IDs werden **verschlüsselt**  
+- In der Datenbank wird **nur der Token‑Hash** gespeichert  
+
+Der Controller prüft beim Aufruf des Reset‑Links sowohl die entschlüsselte ID als auch den Token‑Hash und bricht bei Manipulation sofort ab.
+
+---
+
+## Workflow‑Helpers: Session & Redirect
+
+### Session‑Helper
+
+- Setzen und Auslesen von Session‑Daten  
+- Flash‑Nachrichten für einmalige Hinweise  
+- Saubere Schnittstelle statt direktem Zugriff auf `$_SESSION`
+
+### Redirect‑Helper
+
+- Einfache Weiterleitungen per Einzeiler  
+- Automatisches Beenden des Skripts  
+- Optional: Zurück zur vorherigen Seite  
+
+Diese beiden Helpers sorgen für klaren, gut lesbaren Controller‑Code.
+
+---
+
+## Neue Features hinzufügen
+
+Ein neues Feature folgt immer drei einfachen Schritten:
+
+1. **Model** anlegen (inkl. Datenbanktabelle)  
+2. **Route** definieren  
+3. **Controller‑Methode + View** erstellen, ggf. mit Service für komplexe Logik  
+
+---
+
+## Nice to know: OTP
+
+MyFramework_v3.1 unterstützt Zwei‑Faktor‑Authentifizierung (OTP).  
+Zum Testen eines OTP‑Secrets kann z. B. dieser Dienst genutzt werden:  
+https://totp.danhersam.com/
