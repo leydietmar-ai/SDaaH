@@ -65,7 +65,7 @@ define('PUBLIC_CATEGORIES', ['Sonstiges', 'Fachbeiträge', 'News']);
 
 return [
     "app" => [
-        "name"      => "MyFramework_v3.1",
+        "name"      => "...Projekt-Name...",
         "url"       => $_ENV['APP_URL'] ?? 'http://deine URL',
         // Alt:
         // "base_path" => $_ENV['APP_BASE_PATH'] ?? '/...Pprojekt-Verzeichnis...',
