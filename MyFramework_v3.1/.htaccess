@@ -1,9 +1,0 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Verhindert Endlosschleifen
-    RewriteCond %{REQUEST_URI} !^/public/
-    
-    # Leitet alles in den public-Ordner
-    RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
