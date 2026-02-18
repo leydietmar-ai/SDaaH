@@ -79,23 +79,23 @@ Sie arbeiten eng mit Models zusammen und steuern komplette Abläufe.
 
 ---
 
-## Sicheres Passwort‑Reset \& Token‑Handling
+## Sicheres Passwort‑Reset & Token‑Handling
 
 Das Framework nutzt ein robustes Sicherheitskonzept für Passwort‑Resets:
 
-- Tokens sind \*\*zeitlich begrenzt\*\*  
+- Tokens sind **zeitlich begrenzt**  
 
-- Jeder Token ist \*\*nur einmal gültig\*\*  
+- Jeder Token ist **nur einmal gültig**  
 
-- Benutzer‑IDs werden \*\*verschlüsselt\*\*  
+- Benutzer‑IDs werden **verschlüsselt**  
 
-- In der Datenbank wird \*\*nur der Token‑Hash\*\* gespeichert  
+- In der Datenbank wird **nur der Token‑Hash** gespeichert  
 
 Der Controller prüft beim Aufruf des Reset‑Links sowohl die entschlüsselte ID als auch den Token‑Hash und bricht bei Manipulation sofort ab.
 
 ---
 
-## Workflow‑Helpers: Session \& Redirect
+## Workflow‑Helpers: Session & Redirect
 
 ### Session‑Helper
 
@@ -103,7 +103,7 @@ Der Controller prüft beim Aufruf des Reset‑Links sowohl die entschlüsselte I
 
 - Flash‑Nachrichten für einmalige Hinweise  
 
-- Saubere Schnittstelle statt direktem Zugriff auf `$\_SESSION`
+- Saubere Schnittstelle statt direktem Zugriff auf `$_SESSION`
 
 ### Redirect‑Helper
 
@@ -121,11 +121,11 @@ Diese beiden Helpers sorgen für klaren, gut lesbaren Controller‑Code.
 
 Ein neues Feature folgt immer drei einfachen Schritten:
 
-1\. \*\*Model\*\* anlegen (inkl. Datenbanktabelle)  
+1. **Model** anlegen (inkl. Datenbanktabelle)  
 
-2\. \*\*Route\*\* definieren  
+2. **Route** definieren  
 
-3\. \*\*Controller‑Methode + View\*\* erstellen, ggf. mit Service für komplexe Logik  
+3. **Controller‑Methode + View** erstellen, ggf. mit Service für komplexe Logik  
 
 ---
 
