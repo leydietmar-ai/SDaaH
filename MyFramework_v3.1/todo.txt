@@ -1,0 +1,5 @@
+Diese Website ist noch in Arbeit!
+
+Es ist kein Framework im eigentlichen Sinne. Es ist eine fertige Website mit den gebräuchlichsten Seiten, wie "Über ...", "Bildergalerie", "Blogpost", "Projekte", "Kontaktformular", "Dashboard nach Rollen". 
+Darin enthalten sind viele Funktionen: komplette Archivierungs-Umgebung der Blogposts; Verwaltung der Blogposts (view, edit, delete, add); Benutzerverwaltung (rollenbasierend); Verwendung von modalen Fenstern
+für Projekt-Details, etc. Allerdings kann man alle relevanten Teile leicht in eigene Websites übernehmen und anpassen, was es dann doch als Basis für andere Anwendungen macht.
