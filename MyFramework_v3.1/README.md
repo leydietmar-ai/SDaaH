@@ -17,6 +17,7 @@ MyFramework\_v3.1 ist ein leichtgewichtiges PHP‑MVC‑Framework mit klarer Str
 │   ├── Services/        # Komplexe Logik (AuthService inkl. OTP, Mailer)
 │   ├── Traits/          # Die "Misch-Komponenten" (CrudTrait, ResponseTrait)
 │   └── Views/           # Meine Templates (auth/, layouts/, modal/)
+├── data/                # Blogpost Archiv
 ├── public/              # Einziger öffentlich erreichbarer Ordner
 │   ├── .htaccess        # Leitet alles auf index.php um
 │   ├── index.php        # Der "Front-Controller" (Einstiegspunkt)
