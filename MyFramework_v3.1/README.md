@@ -129,12 +129,12 @@ Ein neues Feature folgt immer drei einfachen Schritten:
 
 ---
 
-## Nice to know: OTP
+## Nice to know: TOTP (zeitlich begrenzte Einmalpasswörter - Time-based one-time password)
 
-MyFramework_v3.1 unterstützt Zwei‑Faktor‑Authentifizierung (OTP).  
-Zum Testen eines OTP‑Secrets kann z. B. dieser Dienst genutzt werden:  
+MyFramework_v3.1 unterstützt Zwei‑Faktor‑Authentifizierung (TOTP).  
+Zum Testen eines TOTP‑Secrets kann z. B. dieser Dienst genutzt werden:  
 <https://totp.danhersam.com/>
 
 Für den späteren Einsatz empfehle ich u.a. die App "Google Authenticator", da nach erfolgreicher
 Registrierung auch ein QRCode angezeigt wird, den man dort scannen kann, anstatt immer auf die
-Webseite zu gehen.
+obige Webseite zu gehen.
