@@ -1,1 +1,0 @@
-Dieses PHP-MVC-Framework ist komplett lauffähig und wird z.Zt. erweitert, um gezielt daraus neue Websites zu generieren.
