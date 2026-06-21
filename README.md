@@ -36,12 +36,26 @@ Hier entstehen kleine Tools, Experimente, Lernprojekte und alles, was mich techn
 
 ---
 
-## 👤 Über mich
+👤 Über mich
+Ich bin Dietmar Ley, Hobby‑Entwickler und neugierig geblieben. 
 
-Ich bin **Dietmar Ley**, Hobby‑Entwickler und neugierig geblieben.  
-Auch im Ruhestand begeistert mich Softwareentwicklung – als geistige Herausforderung, als kreatives Werkzeug und als persönliches Hobby.
+Nach einem langen Berufsleben in der Welt der Mainframes (unter anderem als Systemprogrammierer für MVS, OS/390 und z/OS sowie im 2nd-Level-Support bei Amdahl) nutze ich meine Erfahrung in der Fehleranalyse (Problem Determination) nun für private Projekte. Die Faszination für Code lässt mich auch im Ruhestand nicht los – heute jedoch als geistige Herausforderung, kreatives Werkzeug und rein persönliches Hobby.
 
 SDaaH ist mein Platz, um diese Freude sichtbar zu machen.
+
+---
+
+🛠️ Aktuelle Projekte
+
+Hier teile ich Werkzeuge, die aus meiner Mainframe-Erfahrung im Bereich Problem Determination entstanden sind, übersetzt in moderne Web- und Desktop-Technologien:
+
+### 🐘 abend-diagnostic (PHP / MVC)
+Eine strukturierte Fehlerbehandlung für PHP-MVC-Anwendungen, die stark an die Prinzipien von klassischen Mainframe-Diagnosetools (Abenddump, Snapdump, Debugdump und Trace) angelehnt ist. Sie hilft dabei, Systemzustände im Fehlerfall präzise zu erfassen.
+
+### 🐍 DumpViewer & Grid-Layout (Python / PySide6)
+Ein visueller DumpViewer, dessen Benutzeroberfläche auf einem eigens entwickelten, dynamischen `grid_layout_generator` basiert. Das Projekt kommt in zwei Varianten:
+1. **Die Testversion:** Ein interaktives Tool, mit dem sich die Grid-Layouts (Grid-Areas, Grid-Area-Templates) vorab visuell anzeigen und prüfen lassen.
+2. **Die produktive Version:** Die fertige, performante Oberfläche für den täglichen Einsatz im DumpViewer.
 
 ---
 
