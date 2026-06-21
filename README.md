@@ -36,7 +36,7 @@ Hier entstehen kleine Tools, Experimente, Lernprojekte und alles, was mich techn
 
 ---
 
-👤 Über mich
+## 👤 Über mich
 Ich bin Dietmar Ley, Hobby‑Entwickler und neugierig geblieben. 
 
 Nach einem langen Berufsleben in der Welt der Mainframes (unter anderem als Systemprogrammierer für MVS, OS/390 und z/OS sowie im 2nd-Level-Support bei Amdahl) nutze ich meine Erfahrung in der Fehleranalyse (Problem Determination) nun für private Projekte. Die Faszination für Code lässt mich auch im Ruhestand nicht los – heute jedoch als geistige Herausforderung, kreatives Werkzeug und rein persönliches Hobby.
@@ -45,7 +45,7 @@ SDaaH ist mein Platz, um diese Freude sichtbar zu machen.
 
 ---
 
-🛠️ Aktuelle Projekte
+## 🛠️ Aktuelle Projekte
 
 Hier teile ich Werkzeuge, die aus meiner Mainframe-Erfahrung im Bereich Problem Determination entstanden sind, übersetzt in moderne Web- und Desktop-Technologien:
 
