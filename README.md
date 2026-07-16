@@ -59,9 +59,10 @@ Ein visueller DumpViewer, dessen Benutzeroberfläche auf einem eigens entwickelt
 
 ---
 
-## 📂 Status
+📂 Status & Support
+Dieses Repository wächst nach Lust und Laune – ganz im Sinne von Software Development as a Hobby.
 
-Dieses Repository wächst nach Lust und Laune – ganz im Sinne von  
-**Software Development as a Hobby**.
+🚀 **In Vorbereitung:** Der Upload der beiden separaten Projekte (**abend-diagnostic** und **DumpViewer**) wird aktuell vorbereitet und folgt in Kürze. 
 
-⛔ Hinweis zum Support: Dieses Projekt ist ein reines Hobby im Ruhestand. Der Code wird im aktuellen Zustand ("as is") geteilt. Es wird kein Support geleistet, und Anfragen oder Änderungswünsche können leider nicht beantwortet werden. Vielen Dank für das Verständnis!
+⛔ **Hinweis zum Support:** Diese Projekte sind ein reines Hobby im Ruhestand. Der Code wird nach Veröffentlichung im aktuellen Zustand ("as is") geteilt. Es wird kein aktiver Support geleistet, und Anfragen oder Änderungswünsche können leider nicht beantwortet werden. Vielen Dank für das Verständnis!
+
