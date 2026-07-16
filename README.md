@@ -63,3 +63,5 @@ Ein visueller DumpViewer, dessen Benutzeroberfläche auf einem eigens entwickelt
 
 Dieses Repository wächst nach Lust und Laune – ganz im Sinne von  
 **Software Development as a Hobby**.
+
+⛔ Hinweis zum Support: Dieses Projekt ist ein reines Hobby im Ruhestand. Der Code wird im aktuellen Zustand ("as is") geteilt. Es wird kein Support geleistet, und Anfragen oder Änderungswünsche können leider nicht beantwortet werden. Vielen Dank für das Verständnis!
