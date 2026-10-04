@@ -1,0 +1,201 @@
+/* ---------------------------------------------------------
+   GLOBAL
+--------------------------------------------------------- */
+QWidget {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    font-family: Segoe UI, sans-serif;
+    font-size: 13px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: #2b2b2b;
+    width: 10px;
+}
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #777;
+}
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    height: 0px;
+}
+
+/* ---------------------------------------------------------
+   MENÜLEISTE (goldenrod)
+--------------------------------------------------------- */
+QMenuBar {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 10px;
+}
+
+QMenuBar::item:selected {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+QMenu {
+    background-color: #3a3a3a;
+    border: 1px solid #b8860b;
+}
+
+QMenu::item {
+    padding: 4px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #555;
+}
+
+/* ---------------------------------------------------------
+   STATUSBAR (goldenrod)
+--------------------------------------------------------- */
+QStatusBar {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    border-top: 1px solid #b8860b;
+}
+
+QStatusBar QWidget {
+    background-color: goldenrod;
+    color: black;
+}
+
+QStatusBar QLabel {
+    background: transparent;
+    color: black;
+}
+
+/* ---------------------------------------------------------
+   TREE VIEWS
+--------------------------------------------------------- */
+QTreeView {
+    background-color: #333;
+    alternate-background-color: #3a3a3a;
+    border: 1px solid #555;
+    padding: 4px;
+}
+
+QTreeView::item {
+    padding: 3px 6px;
+}
+
+QTreeView::item:selected {
+    background: #555;
+    color: #fff;
+}
+
+/* TreeView Header */
+QHeaderView::section {
+    background-color: #444;
+    color: #e0e0e0;
+    padding: 4px;
+    border: 1px solid #555;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------
+   CODE VIEW
+--------------------------------------------------------- */
+#code_view {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    border: 1px solid #444;
+    padding: 6px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+#header_label {
+    background-color: #444;
+    color: #e0e0e0;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+}
+
+/* ---------------------------------------------------------
+   ERROR INFO
+--------------------------------------------------------- */
+#error_info_label {
+    background-color: #552222;
+    color: #ffaaaa;
+    padding: 8px;
+    border: 1px solid #aa4444;
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------------------
+   META INFO (Dark Mode)
+--------------------------------------------------------- */
+#meta_label {
+    background-color: #2a2a2a;
+    color: #ddd;
+    padding: 6px 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+/* ---------------------------------------------------------
+   DEBUG LOG VIEW (Dark)
+--------------------------------------------------------- */
+#debuglog_view {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 6px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+/* Zeitstempel */
+#debuglog_view .timestamp {
+    color: #aaaaaa;
+}
+
+/* Header-Zeilen */
+#debuglog_view .debugheader {
+    color: #ffd86b; /* goldenrod hell */
+    font-weight: bold;
+}
+
+/* PHP-Typen */
+#debuglog_view .keyword {
+    color: #4ea1ff;
+    font-weight: bold;
+}
+
+/* Strings */
+#debuglog_view .string {
+    color: #ff8080;
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+#footer_label {
+    background-color: #333;
+    color: #ccc;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px;
+    border-top: 1px solid #555;
+}

@@ -1,0 +1,230 @@
+/* ---------------------------------------------------------
+   GLOBAL
+--------------------------------------------------------- */
+QWidget {
+    background-color: #f5f5f5;
+    color: #222;
+    font-family: Segoe UI, sans-serif;
+    font-size: 13px;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: #e0e0e0;
+    width: 10px;
+    margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #b0b0b0;
+    min-height: 20px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #999;
+}
+QScrollBar::add-line,
+QScrollBar::sub-line {
+    height: 0px;
+}
+
+/* ---------------------------------------------------------
+   MENÜLEISTE
+--------------------------------------------------------- */
+QMenuBar {
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 4px 10px;
+}
+
+QMenuBar::item:selected {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+QMenu {
+    background-color: #fff8dc; /* cornsilk */
+    border: 1px solid #b8860b; /* dark goldenrod */
+}
+
+QMenu::item:selected {
+    background-color: #ffe4a1;
+}
+
+/* ---------------------------------------------------------
+   TREEVIEW HEADER
+--------------------------------------------------------- */
+QHeaderView::section {
+    background-color: #e8e8ff;
+    color: #222;
+    padding: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------------------
+   TREE VIEWS
+--------------------------------------------------------- */
+QTreeView {
+    background-color: #ffffff;
+    alternate-background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+QTreeView::item {
+    padding: 3px 6px;
+}
+
+QTreeView::item:selected {
+    background: #cce0ff;
+    color: #000;
+}
+
+/* ---------------------------------------------------------
+   CODE VIEW
+--------------------------------------------------------- */
+QPlainTextEdit {
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+/* ---------------------------------------------------------
+   HEADER
+--------------------------------------------------------- */
+#header_label {
+    background-color: #e8e8ff;
+    color: #222;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ---------------------------------------------------------
+   ERROR INFO
+--------------------------------------------------------- */
+#error_info_label {
+    background-color: #ffecec;
+    color: #b00000;
+    padding: 8px;
+    border: 1px solid #ffaaaa;
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------------------
+   META INFO
+--------------------------------------------------------- */
+#meta_label {
+    background-color: #fdfdfd;
+    color: #333;
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+/* ---------------------------------------------------------
+   DEBUG LOG VIEW (Light)
+--------------------------------------------------------- */
+#debuglog_view {
+    background-color: #ffffff;
+    color: #222;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+}
+
+/* Zeitstempel */
+#debuglog_view .timestamp {
+    color: #888;
+}
+
+/* Header-Zeilen */
+#debuglog_view .debugheader {
+    color: #b8860b; /* goldenrod */
+    font-weight: bold;
+}
+
+/* PHP-Typen */
+#debuglog_view .keyword {
+    color: #005cc5;
+    font-weight: bold;
+}
+
+/* Strings */
+#debuglog_view .string {
+    color: #d14;
+}
+
+/* ---------------------------------------------------------
+   FOOTER
+--------------------------------------------------------- */
+#footer_label {
+    background-color: #f0f0f0;
+    color: #444;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px;
+    border-top: 1px solid #ccc;
+}
+
+/* ---------------------------------------------------------
+   STACK VIEW
+--------------------------------------------------------- */
+#stack_label {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+/* ---------------------------------------------------------
+   BUTTONS
+--------------------------------------------------------- */
+QPushButton {
+    background: #e6e6e6;
+    border: 1px solid #aaa;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+QPushButton:hover {
+    background: #dcdcdc;
+}
+QPushButton:pressed {
+    background: #c8c8c8;
+}
+
+/* ---------------------------------------------------------
+   STATUSBAR – funktioniert IMMER
+--------------------------------------------------------- */
+QStatusBar {
+    background: goldenrod;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    border-top: 1px solid #b8860b;
+}
+
+QStatusBar QWidget {
+    background: goldenrod;
+    color: black;
+}
+
+QStatusBar QLabel {
+    background: transparent;
+    color: black;
+}
+
+QStatusBar::item {
+    border: none;
+    background: transparent;
+}
