@@ -1,0 +1,8 @@
+Application is tested under Python V3.13.15 / PySide6 V6.11.2
+
+Following packages are required to install via PIP:
+
+PySide6                      
+PySide6_Addons              
+PySide6_Essentials 
+
