@@ -99,6 +99,36 @@ Das System wird über PSR-4 in der `composer.json` registriert:
 }
 ```
 
+### In eigene PHP-MVC-Struktur einbinden (Beispiel)
+
+```json
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "pragmarx/google2fa-qrcode": "^3.0",
+        "bacon/bacon-qr-code": "^3.1",
+        "phpmailer/phpmailer": "^7.0",
+        "intervention/image": "^3.11",
+        "league/commonmark": "^2.7",
+        "abend/diagnostic": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "C:\\WebDev\\projects\\abend-diagnostic",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
+}
+```
+
 ### 1. Globalen ABEND-Handler registrieren
 
 In der zentralen Startdatei Ihres MVC (z. B. `bootstrap/bootstrap.php` oder `public/index.php`):
