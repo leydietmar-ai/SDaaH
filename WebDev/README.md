@@ -361,10 +361,10 @@ Dazu gibt es weiterführende Informationen unter
 
 #### ICU-Bibliotheken für PHP 8.5.11 (ICU 77)
 
-LoadFile "C:/WebDev/php/icuuc77.dll"
-LoadFile "C:/WebDev/php/icuin77.dll"
-LoadFile "C:/WebDev/php/icudt77.dll"
-LoadFile "C:/WebDev/php/icuio77.dll"
+- LoadFile "C:/WebDev/php/icuuc77.dll"
+- LoadFile "C:/WebDev/php/icuin77.dll"
+- LoadFile "C:/WebDev/php/icudt77.dll"
+- LoadFile "C:/WebDev/php/icuio77.dll"
 
 #### Apache dll für PHP 8.5.11
 
