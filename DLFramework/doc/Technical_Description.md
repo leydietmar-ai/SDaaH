@@ -8,10 +8,6 @@
 
 ## 🤭 Aktualisierungen 04-08/2026
 
-### **Knowledge Hub**
-
-Vorbereitung einer KI-ähnlichen
-
 ### **abend-diagnostic**
 
 Die abend-diagnostic-Umgebung wird per composer mit eingebunden. Dies hat auch eine Änderung des eigenen ErrorHandlers erfordert. Dort werden jetzt nur noch logStatus-Informationen ausgegeben! Fehlerinformationen nur noch über die abend-diagnostic-Umgebung. Damit gibt es an de Stelle keine Redundanzen mehr.
