@@ -4,6 +4,8 @@
 
 # SDaaH – Software Development as a Hobby
 
+***A translation of the documentation is in progress.***
+
 **SDaaH** steht für *Software Development as a Hobby* – ein persönliches Projekt von **Dietmar Ley**, entstanden aus der Freude am Programmieren und dem Wunsch, auch im Ruhestand kreativ und neugierig zu bleiben.
 
 Die Idee entstand spontan, als ich für eine Python‑GUI‑Anwendung eine passende Kopfzeile suchte. Der bekannte Begriff *Software as a Service (SaaS)* kam mir in den Sinn – und daraus entwickelte sich spielerisch die Abwandlung **SDaaH**.
