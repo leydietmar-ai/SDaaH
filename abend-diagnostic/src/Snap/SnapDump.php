@@ -16,26 +16,24 @@ class SnapDump
         bool $includeEnvironment = false
     ): void {
         $dump = [
-            "type" => "SNAP",
-            "label" => $label,
-            "context" => $context,
-            "meta" => [
-                "timestamp" => date('c'),
-                "version" => "1.1.0",
-                "request_id" => bin2hex(random_bytes(8))
+            'type'       => 'SNAP',
+            'label'      => $label,
+            'context'    => $context,
+            'meta'       => [
+                'timestamp'  => date('c'),
+                'version'    => '1.1.0',
+                'request_id' => bin2hex(random_bytes(8))
             ],
             'stacktrace' => SnapStacktraceCollector::collect(),
-
-            // Vorher: collect_memory()
-            MemoryCollector::collect()
+            'memory'     => MemoryCollector::collect(),
         ];
 
         if ($includeGlobals) {
-            $dump["globals"] = GlobalsCollector::collect();
+            $dump['globals'] = GlobalsCollector::collect();
         }
 
         if ($includeEnvironment) {
-            $dump["environment"] = EnvironmentCollector::collect();
+            $dump['environment'] = EnvironmentCollector::collect();
         }
 
         // 1. Projekt-Wurzel über die ausgeführte index.php ermitteln
@@ -55,13 +53,14 @@ class SnapDump
             mkdir($dir, 0777, true);
         }
 
-        // 4. Dateiname und finaler, sicherer Schreibbefehl
-        $filename = date('Ymd_His') . '_snap.json';
+        // 4. Dateiname inkl. Millisekunden, damit schnelle Folge-Snaps nicht überschrieben werden
+        $micro    = substr((string) microtime(true), -4);
+        $filename = date('Ymd_His') . '_' . $micro . '_snap.json';
         $fullPath = $dir . DIRECTORY_SEPARATOR . $filename;
 
         file_put_contents(
             $fullPath,
-            json_encode($dump, JSON_PRETTY_PRINT)
+            json_encode($dump, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT)
         );
     }
 }
