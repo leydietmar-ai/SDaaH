@@ -4,7 +4,6 @@ namespace Abend;
 
 use Abend\Trace\GtfTrace;
 use Abend\Collector\DumpCollector;
-use Abend\Snap\SnapDump;
 use Abend\Debug\DebugDumper; // Neu importiert für das Start-Event
 
 /**
@@ -35,10 +34,6 @@ set_exception_handler(function (\Throwable $exception) {
 
     $dumpData = DumpCollector::collect($exception);
     DumpCollector::save($dumpData);
-
-    SnapDump::snap("ABEND - Uncaught Exception", [
-        'exception_class' => get_class($exception)
-    ]);
 
     throw $exception;
 });
